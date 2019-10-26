@@ -9,13 +9,18 @@ var looses = 0;
 
 //varables for each crystal random number for turn//
     //red, blue, yellow, green//
-var redCrystal = " ";
-var blueCrystal = " ";
-var yellowCrystal = " ";
-var greenCrystal = " ";
+var redCrystalOptions = ["1","2","3","4"];
+var blueCrystalOptions = ["5","7","9","11"];
+var purpleCrystalOptions = ["8","12","16","20"];
+var greenCrystalOptions = ["25","30","35","40"];
 
+var redCrystal = "";
+var blueCrystal = "";
+var purpleCrystal = "";
+var greenCrystal = "";
 //varable for matching number //
     //computerChoice, computerOptions//
+var matchNumberOptions = ["75","77","84","81","99","100","101","113","120","127"]
 var selectedMatchNumber = " ";
 
 //varable for current count/sum of numbers//
@@ -24,6 +29,8 @@ var counter = 0;
 
 
 //------functions-------//
+//start function//
+
 //onclick function to take the value from the image to add to the sum//
 $("#red-crystal").on("click", function() {
 

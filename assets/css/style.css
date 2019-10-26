@@ -1,0 +1,23 @@
+.img-thumbnail {
+    height: 100px;
+    width: 100px;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+.card-text {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #000;
+    font-weight: bold;
+    
+}
