@@ -10,7 +10,7 @@
 
 
 </head>
-<body>
+<body class="theme">
    
     <header>
         <div class="jumbotron jumbotron-fluid">
@@ -20,67 +20,82 @@
             </div>
         </div>
     </header>
+
     <div class="container">
-        <div class="card bg-dark text-white">
-            <img src="assets/images/zelda background.jpg" class="card-img" alt="background">
-                <div class="card-img-overlay">
-                    <div class="row">
-                        <h2 class="card-title">How to play the game</h2>
-                    </div>
-                    <div class="row">    
-                        <p class="card-text">click on a one of the rupee of your choosing to findout what it's value is. </p>
-                        <p class="card-text"> The goal is for you to try to get the sum that equals the Match Number. If you get it exactly right you win! 
-                            If you go over you lose. You can click on any rupee as many times to reach the match number. 
-                        </p>
-                    </div>
-                    <div class="row">
+        <div class="row">
+            <h2 class="card-title">How to play the game</h2>
+        </div>
 
-                        <div id="left" class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Match Number</div>
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="right" class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                            <div class="card-header">Current Total</div>
-                                <div class="card-body">
-                                    <h5 class="card-title"></h5>
-                            </div>
-                        </div>
-                        
-                    </div>
-    
-            
-        <!-- Add a container that displays the Random number to match -->
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img id="blue-crystal" class="img-thumbnail" src="assets/images/bluec2.jpg" >                
-                    </div>
-                    <div class="col-sm-3">
-                        <img id="green-crystal" class="img-thumbnail" src="assets/images/greenc3.jpg">
-                    </div>
-                    <div class="col-sm-3">
-                        <img id="red-crystal" class="img-thumbnail" src="assets/images/redc2.jpg">
-                    </div>
-                    <div class="col-sm-3">
-                        <img id="purple-crystal" class="img-thumbnail" src="assets/images/purplec2.jpg">
-                    </div>
-            </div>    
+        <div class="row">    
+            <p class="card-text">Click on a one of the rupee of your choosing to findout what it's value is. </p>
+             <p class="card-text"> The goal is for you to try to get your Current Total to equal the Match Number. 
+                 If you get it exactly right you win! If you go over you lose. 
+                 You can click on any rupee as many times to try and reach the match number. 
+             </p>
         </div>
     </div>
+    <div class="container">
+            <div class="row">
+                <h2 class="card-title"></h2>
+            </div>
+            <div class="row">    
+                <!-- Add a container that displays the Random number to match -->
+                <div class="col-sm-2">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 10rem;">
+                        <div class="card-header">Match Number</div>
+                            <div class="card-body">
+                                <h5 id="match-number" class="card-title"></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add the sum of the selected number the user is choosing -->
+                <div class="col-sm-2">
+                    <div class="card text-white bg-secondary mb-3" style="max-width: 10rem;">
+                        <div class="card-header">Current Total</div>
+                            <div class="card-body">
+                                <h5 id="counter-number" class="card-title"></h5>
+                            </div>
+                        </div>
+                    </div>
+            </div>  
+            <div class="col-Lg-4">
+                <ul id="scoreboard" class="list-group">
+                    <li class="listGroupItem" id="wins">Wins:</li>
+                    <li  class="listGroupItem"id="losses">Losses:</li>
+                </ul>
+          
+            </div>           
+   
+            <div class="row">    
+            <!-- Add the images of the crystals that will be contected to a random number -->
+            <div class="row">
+                <div class="col-sm-2">
+                    <div id="blueimg"></div>
+                    <img id="blue-crystal" class="img-thumbnail" src="assets/images/bluec2.jpg" >                
+                </div>
+                <div class="col-sm-2">
+                    <div id="greenimg"></div>
+                    <img id="green-crystal" class="img-thumbnail" src="assets/images/greenc3.jpg">
+                </div>
+                <div class="col-sm-2">
+                    <div id="redimg"></div>
+                    <img id="red-crystal" class="img-thumbnail" src="assets/images/redc2.jpg">
+                </div>
+                <div class="col-sm-2">
+                    <div id="purpleimg"></div>
+                    <img id="purple-crystal" class="img-thumbnail" src="assets/images/purplec2.jpg">
+                </div>
+            </div>  
+        </div>
+    </div>
+<!-- Add a container displaying the wins and losses counts -->
     
-    <!-- Add a container that displays the Random number to match -->
-
-    <!-- Add a container displaying the wins and losses counts -->
-
-    <!-- Add the images of the crystals that will be contected to a random number -->
-
-    <!-- Add the sum of the selected number the user is choosing -->
-
-    <!-- besure to include a footer -->
+      <!-- besure to include a footer -->
+    <footer>
+        <div class="container">
+                &copy; Copyright Nicole Heersink 
+        </div>
+    </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
