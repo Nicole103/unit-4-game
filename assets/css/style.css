@@ -3,21 +3,29 @@
     width: 100px;
 }
 
-#left {
-    float: left;
-}
-
-#right {
-    float: right;
-}
 .card-text {
     color: black;
     font-size: 26px;
-    font-weight: bold;
+    
 }
 
 .card-title {
     color: #000;
     font-weight: bold;
     
+}
+.theme {
+    background-image: url(../images/zelda-theme.jpg);
+    background-size: 100%;
+}
+.jumbotron {
+   background-color: transparent;
+   font-weight: bolder;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.listGroupItem {
+    font-family: Arial, Helvetica, sans-serif;
+    size: 64px;
+    font-weight: bold;
+
 }
