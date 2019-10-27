@@ -1,12 +1,10 @@
-# unit-4-game
+# The Crystal Collector Game
 
-# Objective
-Click on any crystal images create a sum that matches the randomly selected number! 
+## Overview
+The Crystal Collector Game uses JavaScript to select the random number for the user to match by clicking on the crystals. Each crystal is assigned a specific value for each turn. These string values were then changed to number values by using parseInt method so that the current total could be calulated. Once the user either reached a true equal value or exceded the value of the random number the game would declair the turn won or lost. 
 
-# Things to Note
- * None of the crystals equal the same value.
- * Each turn the crystals will change value.
-
-# Tools used to create this game
-1. Bootstrap was used to style this page as well as some personalization to the styles.
-2. jQuery was used to make the javascript more efficient 
+## technologies
+ * Math.floor()
+ * Math.random()
+ * jQuery library
+ * Bootstrap
