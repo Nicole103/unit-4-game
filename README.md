@@ -8,3 +8,6 @@ The Crystal Collector Game uses JavaScript to select the random number for the u
  * Math.random()
  * jQuery library
  * Bootstrap
+
+ ## Quick link:
+ https://nicole103.github.io/unit-4-game/
